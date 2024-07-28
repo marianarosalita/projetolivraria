@@ -1,45 +1,105 @@
 #topo { 
-    background-color: rgb(251, 255, 0);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0bac3;
+    background-image: url(../images/topo.jpg);
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-variant: small-caps;
-    color:red;
+    color:#5d4b4b;
     text-align: center;    
 }
 #menu {
-    background-color: rgba(191, 128, 228, 0.712);
+    background-color: #fbe3f3;
 }
-.destaques, .produtos, .sobre, .contato { 
-    background-color: rgb(207, 135, 109);
+.destaques, .produtos, .promoções, .sobre, .contato { 
+    background-image: url(../images/fundo.jpg) ;
+    background-size: cover;
 }
+
 #rodape { 
-    background-color: darkkhaki;
+    background-color: #c1a6f7;
 }
+
 #rodape p {
-    font-weight: 900;
-    font-size: 50px;
+    font-weight: 250;
+    font-size: 25px;
     color:white;
-    text-indent: 50px;
+    text-indent: 25px;
     text-transform: capitalize;
+    text-align: center;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:visited {
-    color: antiquewhite;
+    color: #5d4b4b;
 }
 
 a:hover {
-    background-color: black;
-    color: yellow;
+    background-color: #5d4b4b;
+    color: white;
     font-size: 30px;
     margin: 5px;
     border: solid 2px white;
 }
+
 #topo:hover {
-    display: none;
+    display: contents;
+    
 }
+
+table, th, td {
+    border: dashed;
+    border-color: #c1a6f7;
+}
+
+thead tr {
+    background-color: #fdf9c4;
+    color: #5d4b4b;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #d1eaf9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d8f79a;
+}
+
+body{
+    margin: 10px 10px 10px 10px;
+    padding: 20px;
+}
+
+p {
+    text-indent: 30px; 
+    margin: 20px 0; 
+    line-height: 1.6;
+}
+
+h2 {
+    text-indent: 5px; 
+}
+
+.promoções:hover img {
+    transform: scale(1.1);
+}
+
+.destaques:hover img {
+    transform: rotate(5deg); 
+}
+
+button:hover {
+    color: #5d4b4b;
+}
+
+.sobre {
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+
 
 
 
