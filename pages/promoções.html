@@ -6,6 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria Mari & Cia</title>
     <link rel="stylesheet" href="../css/estilo.css">
+    <style>
+                
+        #menu {
+            background-color: #fbe3f3;
+            padding: 10px 0;
+        }
+
+        #menu ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        #menu ul li {
+            margin: 0 15px;
+        }
+
+        #menu ul li a {
+            text-decoration: none;
+            color: #5d4b4b;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        #menu ul li a:hover {
+            background-color: #5d4b4b;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            #menu ul {
+                flex-direction: column;
+            }
+
+            #menu ul li {
+                margin: 5px 0;
+            }
+        }
+
+        .promoções ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        .promoções ul li {
+            flex: 0 0 calc(50% - 20px);
+            box-sizing: border-box;
+            margin: 0 10px 20px;
+            text-align: center;
+        }
+
+        .promoções ul li .livro {
+            background-color: #fff3f4; 
+            padding: 10px; 
+            border-radius: 5px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        .promoções ul li img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease; 
+        }
+
+        .promoções ul li img:hover {
+            transform: scale(1.1); 
+        }
+
+        .promoções ul li span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        #rodape {
+            background-color: #c2a8f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #rodape ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        #rodape ul li {
+            margin: 0 15px;
+        }
+
+        #rodape ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #rodape p {
+            font-weight: 250;
+            font-size: 14px;
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
 </head>
 <body>
     <header id="topo">
@@ -45,13 +166,6 @@
         <h3>Na compra da coleção de "Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca" ganhe 50% de desconto</h3>
     </main>
     <footer id="rodape">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Livros</a></li>
-            <li><a href="#">Promoções</a></li>
-            <li><a href="#">Mari & Cia</a></li>
-            <li><a href="#">Contatos</a></li>
-        </ul>
         <p>"2024. Livraria Mari & Cia - &copy; Todos os direitos reservados"</p>
 
     </footer>

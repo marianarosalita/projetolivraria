@@ -6,6 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria Mari & Cia</title>
     <link rel="stylesheet" href="../css/estilo.css">
+    <style>
+                
+        #menu {
+            background-color: #fbe3f3;
+            padding: 10px 0;
+        }
+
+        #menu ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        #menu ul li {
+            margin: 0 15px;
+        }
+
+        #menu ul li a {
+            text-decoration: none;
+            color: #5d4b4b;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        #menu ul li a:hover {
+            background-color: #5d4b4b;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            #menu ul {
+                flex-direction: column;
+            }
+
+            #menu ul li {
+                margin: 5px 0;
+            }
+        }
+
+        #rodape {
+            background-color: #c2a8f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #rodape ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        #rodape ul li {
+            margin: 0 15px;
+        }
+
+        #rodape ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #rodape p {
+            font-weight: 250;
+            font-size: 14px;
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
 </head>
 <body>
     <header id="topo">
@@ -110,13 +191,6 @@
         
     </main>
     <footer id="rodape">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Livros</a></li>
-            <li><a href="#">Promoções</a></li>
-            <li><a href="sobre.html">Mari & Cia</a></li>
-            <li><a href="contato.html">Contatos</a></li>
-        </ul>
         <p>"2024. Livraria Mari & Cia - &copy; Todos os direitos reservados"</p>
 
     </footer>

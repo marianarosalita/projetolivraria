@@ -4,13 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVRARIA MARI & CIA</title>
+    <title>Livraria Mari & Cia</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+        #menu {
+            background-color: #fbe3f3;
+            padding: 10px 0;
+        }
+
+        #menu ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        #menu ul li {
+            margin: 0 15px;
+        }
+
+        #menu ul li a {
+            text-decoration: none;
+            color: #5d4b4b;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        #menu ul li a:hover {
+            background-color: #5d4b4b;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            #menu ul {
+                flex-direction: column;
+            }
+
+            #menu ul li {
+                margin: 5px 0;
+            }
+        }
+
+        .destaques ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        .destaques ul li {
+            flex: 0 0 calc(50% - 20px);
+            box-sizing: border-box;
+            margin: 0 10px 20px;
+            text-align: center;
+        }
+
+        .destaques ul li .livro {
+            background-color: #fff3f4; 
+            padding: 10px; 
+            border-radius: 5px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        .destaques ul li img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease; 
+        }
+
+        .destaques ul li img:hover {
+            transform: scale(1.1); 
+        }
+
+        .destaques ul li span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        #rodape {
+            background-color: #c2a8f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #rodape ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        #rodape ul li {
+            margin: 0 15px;
+        }
+
+        #rodape ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #rodape p {
+            font-weight: 250;
+            font-size: 14px;
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
 </head>
 <body>
     <header id="topo">
-        <h1>Livraria Mari & Cia</h1>
+        <h1>⋆.ೃ࿔*:･Livraria Mari & Cia ⋆.ೃ࿔*:･</h1>
         <h2>"Um mundo de histórias te espera"</h2>
+        <div class="topo-conteudo">
+            <form class="search-form">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="icones-topo">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
     </header>
     <nav id="menu">
         <ul>
@@ -24,49 +157,75 @@
     <main class="destaques">
         <h2>Destaques</h2>
         <ul>
-            <li><a href= ><img src="images/capalivro1.jpg" alt="capalivro1"></a>
-                <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 1</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro1.jpg" alt="capalivro1"></a>
+                    <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 1</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro2.jpg" alt="capalivro2"></a>
-                <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 2</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro2.jpg" alt="capalivro2"></a>
+                    <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 2</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro3.jpg" alt=""></a>
-                <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 3</span>
+            <li>
+                <div class="livro">               
+                    <a href= ><img src="images/capalivro3.jpg" alt=""></a>
+                    <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 3</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro4.jpg" alt=""></a>
-                <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 4</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro4.jpg" alt=""></a>
+                    <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 4</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro5.jpg" alt=""></a>
-                <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 5</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro5.jpg" alt=""></a>
+                    <span>Mo Dao Zu Shi: O Fundador da Cultivação Demoníaca - Livro 5</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro6.jpg" alt=""></a>
-                <span>Um Conto de Mil Estrelas - Livro 1</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro6.jpg" alt=""></a>
+                    <span>Um Conto de Mil Estrelas - Livro 1</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro7.jpg" alt=""></a>
-                <span>Um Conto de Mil Estrelas - Livro 2</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro7.jpg" alt=""></a>
+                    <span>Um Conto de Mil Estrelas - Livro 2</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro8.jpg" alt=""></a>
-                <span>Semantic Error: Livro 1</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro8.jpg" alt=""></a>
+                    <span>Semantic Error: Livro 1</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro9.jpg" alt=""></a>
-                <span>Semantic Error: Livro 2</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro9.jpg" alt=""></a>
+                    <span>Semantic Error: Livro 2</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro10.jpg" alt=""></a>
-                <span>Cherry Magic Vol. 01</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro10.jpg" alt=""></a>
+                    <span>Cherry Magic Vol. 01</span>
+                </div>
             </li>
-            <li><a href= ><img src="images/capalivro11.jpg" alt=""></a>
-                <span>Cherry Magic Vol. 02</span>
+            <li>
+                <div class="livro">
+                    <a href= ><img src="images/capalivro11.jpg" alt=""></a>
+                    <span>Cherry Magic Vol. 02</span>
+                </div>
             </li>           
         </ul>
     </main>
     <footer id="rodape">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Livros</a></li>
-            <li><a href="#">Promoções</a></li>
-            <li><a href="#">Mari & Cia</a></li>
-            <li><a href="#">Contatos</a></li>
-        </ul>
         <p>"2024. Livraria Mari & Cia - &copy; Todos os direitos reservados"</p>
 
     </footer>
